@@ -180,7 +180,7 @@ html_document_base <- function(theme = NULL,
       output_str <- restorePreserveChunks(output_str, preserved_chunks)
     }
     
-    print(paste0("Longueur avant copy_resources:", stringi::stri_length(output_str)))
+    print(paste0("Longueur avant copy_resources:", stringi::stri_length(one_string(output_str))))
     
     if (copy_resources) {
       # The copy_resources flag copies all the resources referenced in the
