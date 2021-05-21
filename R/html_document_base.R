@@ -181,7 +181,7 @@ html_document_base <- function(theme = NULL,
     }
     
     print(paste0("Longueur avant copy_resources:", stringi::stri_length(one_string(output_str))))
-    
+    output_str_avant_copy <<- one_string(output_str)
     if (copy_resources) {
       # The copy_resources flag copies all the resources referenced in the
       # document to its supporting files directory, and rewrites the document to
